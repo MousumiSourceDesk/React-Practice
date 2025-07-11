@@ -19,7 +19,7 @@ const ItemAlert=({setDisplayAlert})=> {
       <Alert variant="danger" onClose={() => {setShow(false)}} dismissible >
         <Alert.Heading>Button Click!</Alert.Heading>
         <p>
-          Image Change Successfully......
+          Image Change Successfully with no issue......
         </p>
       </Alert>
     );
