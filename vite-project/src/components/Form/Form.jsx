@@ -18,7 +18,7 @@ const Form=()=> {
       setChecked(false);
     }
   return (
-    <div style={{margin:"100px 300px", color:"green"}}>
+    <div style={{marginLeft:" 300px", color:"green"}}>
 
         <input type='checkbox' id="PHP" name="PHP" value="PHP" onChange={(event)=>{handleChange(event)}} checked={isChecked}/>
         <label htmlFor='PHP'>PHP</label><br/>

@@ -31,6 +31,7 @@ const Header = ({ mode, modeIcon, toggleMode }) => {
             <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link href='/Accor'>Accor</Nav.Link>
             <Nav.Link href='/Form'>Form</Nav.Link>
+            <Nav.Link href='/Clock'>Clock</Nav.Link>
             <NavDropdown title="DropDown" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">

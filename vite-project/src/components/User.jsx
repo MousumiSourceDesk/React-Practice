@@ -5,7 +5,6 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import Dropdown from 'react-bootstrap/Dropdown';
 import UserApi from './UserApi';
 
 
@@ -98,7 +97,7 @@ const User = ({ mode }) => {
             </Form.Group>
             <Form.Group as={Col} md="3" controlId="validationCustom04">
               <Form.Label>State</Form.Label><br/>
-              <select class="form-select form-select-md" onChange={(event)=>{setSelectCity(event.target.value)}} required>
+              <select className="form-select form-select-md" onChange={(event)=>{setSelectCity(event.target.value)}} required>
                 <option disabled selected value={""}>Select city....</option>
                 <option value={"West Bengal"}>West Bengal</option>
                 <option value={"Bihar"}>Bihar</option>

@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 const Accor = ({mode}) => {
   return (
-    <div style={{marginTop:'70px',maxHeight:'1200px'}}>
+    <div>
       <Accordion defaultActiveKey="0" >
         <Accordion.Item eventKey="0" style={{backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color:`${mode==='dark'?'white':'black'}`}}>
           <Accordion.Header>Accordion Item #1</Accordion.Header>

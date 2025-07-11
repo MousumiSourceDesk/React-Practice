@@ -1,5 +1,6 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
+import UserApiUse from './UserApiUse';
 //import in User.jsx
 
 const UserApi = ({ fName, lName, userName }) => {
@@ -50,28 +51,12 @@ const UserApi = ({ fName, lName, userName }) => {
                 </Table>
             </div>
             <div>
-                <h1>Data collect form userData array api</h1>
-                <Table bordered hover boolean responsive>{/*boolean use for table border*/}
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Age</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            userData.map((user) => (
-                                <tr>
-                                    <td>{user.userName}</td>
-                                    <td>{user.userEmail}</td>
-                                    <td>{user.userAge}</td>
-                                </tr>
-                            ))
-                        }
-
-                    </tbody>
-                </Table>
+                <h2>Get data from UserApiUse.jsx</h2>
+                {
+                    userData.map((userData) => (
+                        <UserApiUse data={userData} />
+                    ))
+                }
             </div>
         </>
     )

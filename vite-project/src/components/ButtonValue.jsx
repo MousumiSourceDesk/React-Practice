@@ -24,7 +24,7 @@ const ButtonValue = ({mode}) => {
     return (
         <>
             {/*shop value on alert box*/}
-            <div style={{ border: '2px solid maroon', marginTop: "10px" , backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
+            <div style={{ border: '2px solid maroon', backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
                 {/* function call with parameter*/}
                 {/*react don't want function call react wants function describtion*/}
                 <Button variant='success' style={{ margin: '10px' }} onClick={() => { fruit("apple") }}>Apple</Button><br />
@@ -34,7 +34,7 @@ const ButtonValue = ({mode}) => {
 
             {/*Student name show on h1*/}
             {/*hide and show on change state*/}
-            <div style={{ border: '2px solid blue', marginTop: "10px", backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
+            <div style={{ border: '2px solid blue', backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
                 <Button variant='warning' style={{ margin: '10px' }} onClick={() => { setDisplay(!display) }}>Display</Button>{/*display depends on button click*/}
 
                 {
@@ -46,7 +46,7 @@ const ButtonValue = ({mode}) => {
 
             {/*<ItemProps name={name}/>*/}
             {/*passing as a object*/}
-            <div style={{ border: '2px solid yellow', marginTop: "10px", backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
+            <div style={{ border: '2px solid yellow', backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
 
                 <ItemProps userObject={userObject} />
             </div>
@@ -54,7 +54,7 @@ const ButtonValue = ({mode}) => {
 
 
             {/* load after getting name*/}
-            <div style={{ border: '2px solid green', marginTop: "10px", backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
+            <div style={{ border: '2px solid green', backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
                 {
 
                     name && <StudentProp name={name} />
@@ -66,7 +66,7 @@ const ButtonValue = ({mode}) => {
 
 
             {/*Student name show on h1*/}
-            <div style={{ border: "2px solid brown", marginTop: "10px", backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
+            <div style={{ border: "2px solid brown", backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
                 <StudentChange mode={mode} />
             </div>
         </>
