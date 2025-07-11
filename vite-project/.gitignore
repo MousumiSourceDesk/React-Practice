@@ -2,4 +2,5 @@ git rm -r --cached .
 git add .
 git commit -m "remove node_modules"
 git push
+**/node_modules
 git rm -r --cached node_modules
