@@ -43,7 +43,7 @@ const User = ({ mode }) => {
     <div>
       <h1>User components show/hide by clicking display button on top</h1>
       <Row className='m-3'>
-        <Container className='justify-content-md-center p-3' as={Col} style={{ border: '2px solid midnightblue', width: '75%', margin: 'auto', justifyContent: 'center', backgroundColor: `${mode === 'dark' ? 'slategray' : 'ghostwhite'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}  >
+        <Container className='justify-content-md-center p-3' as={Col} style={{ border: '2px solid midnightblue', width: '75%', margin: 'auto', justifyContent: 'center', backgroundColor: `${mode === 'dark' ? 'darkkhaki' : 'ghostwhite'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}  >
         <Form noValidate validated={validated} onSubmit={handleSubmit} color="yellow">
           <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationCustom01">
