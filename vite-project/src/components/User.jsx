@@ -99,7 +99,7 @@ const User = ({ mode }) => {
             <Form.Group as={Col} md="3" controlId="validationCustom04">
               <Form.Label>State</Form.Label><br/>
               <select class="form-select form-select-md" onChange={(event)=>{setSelectCity(event.target.value)}} required>
-                <option disabled selected>Select city....</option>
+                <option disabled selected value={""}>Select city....</option>
                 <option value={"West Bengal"}>West Bengal</option>
                 <option value={"Bihar"}>Bihar</option>
                 <option value={"3"}>3</option>
