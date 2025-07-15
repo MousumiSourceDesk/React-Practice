@@ -4,7 +4,8 @@ import User from './User.jsx';
 import StudentProp from './studentProp.jsx';
 import ItemProps from './ItemProps.jsx';
 import StudentChange from './StudentChange.jsx';
-const ButtonValue = ({mode}) => {
+import ItemUseEffect from './ItemUseEffect.jsx';
+const ButtonValue = ({ mode }) => {
     const [display, setDisplay] = useState(true);
 
     const fruit = (name) => {
@@ -20,7 +21,7 @@ const ButtonValue = ({mode}) => {
 
     const [name, setName] = useState("");
 
-    
+
     return (
         <>
             {/*shop value on alert box*/}
@@ -69,6 +70,11 @@ const ButtonValue = ({mode}) => {
             <div style={{ border: "2px solid brown", backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
                 <StudentChange mode={mode} />
             </div>
+            {/*use effect*/}
+            <div style={{ border: "2px solid brown", backgroundColor: `${mode === 'dark' ? 'dimgrey' : 'lavender'}`, color: `${mode === 'dark' ? 'white' : 'black'}` }}>
+                <ItemUseEffect mode={mode}/>
+            </div>
+
         </>
     )
 }

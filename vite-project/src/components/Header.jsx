@@ -42,8 +42,8 @@ const Header = ({ mode, modeIcon, toggleMode }) => {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <a style={{ marginTop: '10px', textDecoration: 'none', color: 'inherit' }} href='#' type='checkbox' onClick={toggleMode}>
-              <span className={`${modeIcon}`}></span>
+            <a style={{ marginTop: '10px', textDecoration: 'none', color: 'inherit' }} onClick={toggleMode} >
+              <span className={`${modeIcon}`}>{modeIcon}</span>
             </a>
           </Nav>
           <Form className="d-flex">

@@ -14,6 +14,7 @@ const App = () => {
 
   const [mode, setMode] = useState("light");
   const [modeIcon, setModeIcon] = useState("pi pi-sun");
+  const [modeText,setModeText] = useState("Enable Dark Mode");
   const toggleMode = () => {
     if (mode === "light") {
       setModeIcon("pi pi-moon");
